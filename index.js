@@ -48,8 +48,6 @@ const Base32 = (function() {
             }
 
             if (skip < 4) {
-                // produce a character
-                //console.log('         > ' + (bits >> 3).toBinary(5))
                 this.output += alphabet[bits >> 3]
                 skip += 5
             }
